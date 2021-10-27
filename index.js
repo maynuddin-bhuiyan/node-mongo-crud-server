@@ -21,7 +21,8 @@ app.listen(port, () => {
 
 
 
-const uri = "mongodb+srv://uxUser:YOD533vKNAUo0aMO@cluster0.l2npz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${DB_UDER}:${DB_PASS}@cluster0.l2npz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function run () {
